@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="kakaoLogin()">버튼</button>
+    <script>
+        function kakaoLogin() {
+            window.location.href = 'https://kauth.kakao.com/oauth/authorize?client_id=9885309996ba127b9a0ee3aa45dd9267' + '&redirect_uri=' + encodeURIComponent(`http://localhost:3001/api/oauth/kakao`) + '&response_type=code'
+        }
+    </script>
+</body>
+</html>
